@@ -1,0 +1,17 @@
+[
+    {
+      "district": "District 1",
+      "schools": 50,
+      "teachers": 1000,
+      "students": 20000,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+           
+          ]
+        ]
+      }
+    }
+]
+  
