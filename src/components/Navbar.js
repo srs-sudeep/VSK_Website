@@ -6,11 +6,13 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const aboutUsSection = document.getElementById('about-us');
+  if (aboutUsSection) {
     if (window.scrollY >= aboutUsSection.offsetTop) {
       setNavbarBg('bg-orange-500');
     } else {
       setNavbarBg('bg-transparent');
     }
+  }
   };
 
   useEffect(() => {
