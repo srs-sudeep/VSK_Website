@@ -1,17 +1,22 @@
-[
-    {
-      "district": "District 1",
+{
+    "type": "Feature",
+    "properties": {
+      "district": "Example District",
       "schools": 50,
       "teachers": 1000,
-      "students": 20000,
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-           
-          ]
+      "students": 20000
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [75.789, 22.293],
+          [75.789, 22.302],
+          [75.801, 22.302],
+          [75.801, 22.293],
+          [75.789, 22.293]
         ]
-      }
+      ]
     }
-]
+  }
   
