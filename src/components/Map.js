@@ -4,8 +4,6 @@ import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 const geoUrl =
   "https://raw.githubusercontent.com/shuklaneerajdev/IndiaStateTopojsonFiles/master/Chhattisgarh.topojson";
 const Map = () => {
-
-
   return (
     <div>
       <ComposableMap>
