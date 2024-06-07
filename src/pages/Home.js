@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactUs from './ContactUs';
+import ContactUs from '../components/ContactUs';
 import Map from '../components/Map'; // Import the Map component
 
 const Home = () => {
@@ -12,9 +12,4 @@ const Home = () => {
   );
 }
 
-<<<<<<< HEAD
 export default Home;
-=======
-export default Home;
-
->>>>>>> 11bbf3be3951eedbe6ebd8127089d9337d879099

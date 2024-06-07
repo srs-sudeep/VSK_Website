@@ -10,7 +10,7 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div style={styles.container}>
+    <section id="contact-us" style={styles.container}>
       <h1 style={styles.header}>Contact Us</h1>
       <div style={isPortrait ? styles.contentPortrait : styles.contentLandscape}>
         <div style={isPortrait ? styles.mapContainer : styles.mapContainerLandscape}>
@@ -40,7 +40,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
