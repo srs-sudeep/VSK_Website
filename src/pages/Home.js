@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div>
       <h1>Home</h1>
+      <Map /> 
       <ContactUs />
-      <Map /> {/* Include the Map component */}
     </div>
   );
 }

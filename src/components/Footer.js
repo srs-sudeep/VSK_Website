@@ -3,7 +3,7 @@ import { FaTwitter, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-400 p-8 mt-8 min-h-24 flex items-center absolute bottom-0 w-full">
+    <footer className="bg-orange-400 p-8 mt-8 min-h-24 flex items-center fixed bottom-0 w-full">
       <div className="container mx-auto flex justify-center">
         <div className="flex space-x-4">
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 text-2xl">
