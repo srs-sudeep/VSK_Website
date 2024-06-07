@@ -5,7 +5,7 @@ const geoUrl =
   "https://raw.githubusercontent.com/shuklaneerajdev/IndiaStateTopojsonFiles/master/Chhattisgarh.topojson";
 const Map = () => {
   return (
-    <div>
+    <div id="map">
       <ComposableMap>
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
