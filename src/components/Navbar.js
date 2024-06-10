@@ -8,7 +8,7 @@ const Navbar = () => {
     const aboutUsSection = document.getElementById('about-us');
   if (aboutUsSection) {
     if (window.scrollY >= aboutUsSection.offsetTop) {
-      setNavbarBg('bg-orange-500');
+      setNavbarBg('bg-orange-400');
     } else {
       setNavbarBg('bg-transparent');
     }
@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 w-full p-4 z-50 transition-colors duration-300 ${navbarBg}`}>
     <div className="container mx-auto relative flex justify-between items-center">
-      <div className="text-2xl font-bold">VSK</div>
+      <div className="text-2xl font-bold text-white">VSK</div>
       <div className="md:hidden">
       <button onClick={toggleMenu} className="focus:outline-none">
             {isMenuOpen ? (
@@ -41,7 +41,7 @@ const Navbar = () => {
             )}
           </button>
       </div>
-      <div className={`absolute top-full right-0 mt-2 md:relative md:flex space-x-4 mb-10 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+      <div className={`absolute top-full right-0 mt-2 md:relative md:flex space-x-4 mb-10 text-white ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
         <a href="#hero" className="block md:inline-block mt-2 md:mt-0 ml-4">Hero</a>
         <a href="#about-us" className="block md:inline-block mt-2 md:mt-0">About Us</a>
         <a href="#map" className="block md:inline-block mt-2 md:mt-0">Map</a>
