@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -17,7 +18,7 @@ code {
 
 .glassmorphism-card {
   /* From https://css.glass */
-  background: rgba(245, 143, 143, 0.73);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);

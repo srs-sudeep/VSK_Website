@@ -4,11 +4,58 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import Mission1 from "../data/Lottie/Mission1.json";
 import Mission2 from "../data/Lottie/Mission2.json";
 import Mission3 from "../data/Lottie/Mission3.json";
+import { style } from "d3";
 
+const styles = {
+  container: {
+    padding: "4px",
+    maxWidth: "400rem",
+    margin: "4rem 1rem 1rem",
+    // background:"linear-gradient(89deg, rgb(253, 220, 155) 26.2%, rgb(255, 215, 165) 48.5%)",
+    background: "linear-gradient(to bottom right, #FFF,rgb(253, 215, 165) )", // Gradient from orange to white
+    color: "#333", // Font color
+    borderRadius: "10px", // Rounded corners
+    padding: "20px", // Add padding
+  },
+  title: {
+    fontSize: "4em",
+    marginBottom: "20px",
+    textAlign: "center",
+    color: "#333",
+  },
+  content: {
+    display: "flex",
+    alignItems: "flex-start",
+    flexDirection: "row-reverse", // Reverse the order of elements
+  },
+  imageContainer: {
+    flex: "0 0 auto",
+    marginLeft: "10rem", // Adjust margin for spacing
+    marginBottom: "8rem",
+  },
+  image: {
+    width: "100%",
+    maxWidth: "40rem",
+    height: "auto",
+    borderRadius: "10px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Add shadow for a floating effect
+  },
+  textContainer: {
+    flex: "1",
+    flexDirection: "column",
+    marginLeft: "10rem",
+    marginRight: "20rem",
+  },
+  paragraph: {
+    marginBottom: "10px", // Adjust the gap between paragraphs
+    color: "#333",
+  },
+};
 const Mission = () => {
   return (
-    <div className=" mx-auto py-12" style={{ width: "95vw", height: "100%" }}>
-      <div className="box-container w-full h-full bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg p-8 shadow-lg">
+    <div className="mx-auto py-12" style={styles.container}>
+      <div>
+        {/* <div className="box-container w-full h-full bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg p-8 shadow-lg"> */}
         <div
           style={{
             display: "flex",
@@ -41,8 +88,6 @@ const Mission = () => {
                       autoplay
                       style={{
                         height: "300px",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                       }}
                     />
                   </div>
@@ -77,8 +122,7 @@ const Mission = () => {
                       autoplay
                       style={{
                         height: "300px",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        width:"300px"
                       }}
                     />
                   </div>
@@ -113,8 +157,6 @@ const Mission = () => {
                       autoplay
                       style={{
                         height: "300px",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                       }}
                     />
                   </div>
