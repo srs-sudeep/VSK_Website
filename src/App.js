@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import LoadingPage from "./components/LoadingPage";
 // import Navbar from "./components/Navbar";/
 // import Footer from "./components/Footer";
-import { Navbar,Footer } from "./components";
+import { Navbar, Footer } from "./components";
 import { Home } from "./pages";
+import { NextUIProvider } from "@nextui-org/react";
 function App() {
   // const [loading, setLoading] = useState(true);
   // const location = useLocation();
@@ -40,22 +41,24 @@ function App() {
   //   return <LoadingPage />;
   // }
   return (
-    <div>
-      {/* <div className="overlay">
+    <NextUIProvider>
+      <div>
+        {/* <div className="overlay">
         <div ref={myRef} className="bg" id="vanta">
           {" "}
         </div>
       </div> */}
-      <Navbar />
+        <Navbar />
 
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
+        </BrowserRouter>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </NextUIProvider>
   );
 }
 

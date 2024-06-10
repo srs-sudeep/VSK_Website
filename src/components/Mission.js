@@ -1,61 +1,143 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from "react";
+import { Card, CardBody } from "@nextui-org/react";
+import { Player } from "@lottiefiles/react-lottie-player";
+import Mission1 from "../data/Lottie/Mission1.json";
+import Mission2 from "../data/Lottie/Mission2.json";
+import Mission3 from "../data/Lottie/Mission3.json";
 
 const Mission = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const carouselRef = useRef(null);
-    const totalSlides = 5; // Total number of slides
-
-    const handleNext = () => {
-        setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    };
-
-    const handlePrev = () => {
-        setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
-    };
-
-    useEffect(() => {
-        const interval = setInterval(handleNext, 5000); // Auto-slide every 5 seconds
-        return () => clearInterval(interval);
-    }, []);
-
-    useEffect(() => {
-        const width = carouselRef.current.children[0].offsetWidth;
-        carouselRef.current.style.transform = `translateX(-${currentSlide * width}px)`;
-    }, [currentSlide]);
-
-    return (
-        <div className="container mx-auto py-12">
-            <h1 className="text-center mb-16 text-3xl">Our Mission</h1>
-            <div className="relative overflow-hidden">
-                <div ref={carouselRef} className="flex transition-transform duration-500 ease-in-out w-full">
-                    {["Jason Walker", "Dave Wood", "Nathan Jones", "Mark Jones", "James Wood"].map((name, index) => (
-                        <div key={index} className="flex-shrink-0 w-full text-center">
-                                <div className="relative overflow-hidden w-24 h-24 rounded-full mx-auto border-5 border-white shadow-inner shadow-gray-500">
-                                    <img src={`img/${index + 1}.jpg`} alt="" className="w-full" />
-                                </div>
-                                <div className="mt-6">
-                                    <p className="leading-tight text-center mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptatibus!
-                                    </p>
-                                    <h2 className="uppercase font-light mt-4 text-center">- {name}</h2>
-                                </div>
-                        </div>
-                    ))}
-                </div>
-                <button onClick={handlePrev} className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg focus:outline-none">Prev</button>
-                <button onClick={handleNext} className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg focus:outline-none">Next</button>
-            </div>
-            <div className="text-center mt-8">
-                {Array.from({ length: totalSlides }).map((_, index) => (
-                    <button
-                        key={index}
-                        className={`inline-block h-5 w-5 bg-white rounded-full mx-1 ${currentSlide === index ? 'opacity-100' : 'opacity-50'}`}
-                        onClick={() => setCurrentSlide(index)}
-                    />
-                ))}
-            </div>
+  return (
+    <div className=" mx-auto py-12" style={{ width: "95vw", height: "100%" }}>
+      <div className="box-container w-full h-full bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg p-8 shadow-lg">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+          }}
+          className="d-flex justify-content-center pt-20 text-[27px] text-center md:text-start font-[600] font-Roboto pb-[20px]"
+        >
+          <h1 className="texthead leading-relaxed font-[600]">
+            Our{" "}
+            <span className="bg-opacity rounded-md text-[#fff] bg-orange-400 px-1 py-1">
+              Mission
+            </span>
+          </h1>
         </div>
-    );
+
+        <div className="flex flex-col items-center">
+          <div className="w-3/4 mb-8">
+            <Card
+              className="glassmorphism-card shadow-lg rounded-lg"
+              shadow="sm"
+            >
+              <CardBody>
+                <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center">
+                  <div className="relative col-span-6 md:col-span-4">
+                    <Player
+                      src={Mission1}
+                      className="player"
+                      loop
+                      autoplay
+                      style={{
+                        height: "300px",
+                        borderRadius: "8px",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                      }}
+                    />
+                  </div>
+                  <div className="flex flex-col col-span-6 md:col-span-8">
+                    <h1 className="text-[#000] text-[24px] font-[600] font-Roboto">
+                      Our Mission #1
+                    </h1>
+                    <h3>
+                      Voluptate excepteur duis aliqua officia ut culpa Lorem eu
+                      duis aute ad ut et eiusmod. Proident anim ut labore nulla
+                      eiusmod culpa tempor aliquip. Sunt est veniam adipisicing
+                      cillum occaecat ut non id.
+                    </h3>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+
+          <div className="w-3/4 self-end mb-8">
+            <Card
+              className="glassmorphism-card shadow-lg rounded-lg"
+              shadow="sm"
+            >
+              <CardBody>
+                <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center">
+                  <div className="relative col-span-6 md:col-span-4">
+                    <Player
+                      src={Mission2}
+                      className="player"
+                      loop
+                      autoplay
+                      style={{
+                        height: "300px",
+                        borderRadius: "8px",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                      }}
+                    />
+                  </div>
+                  <div className="flex flex-col col-span-6 md:col-span-8">
+                    <h1 className="text-[#000] text-[24px] font-[600] font-Roboto">
+                      Our Mission #2
+                    </h1>
+                    <h3>
+                      Voluptate excepteur duis aliqua officia ut culpa Lorem eu
+                      duis aute ad ut et eiusmod. Proident anim ut labore nulla
+                      eiusmod culpa tempor aliquip. Sunt est veniam adipisicing
+                      cillum occaecat ut non id.
+                    </h3>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+
+          <div className="w-3/4">
+            <Card
+              className="glassmorphism-card shadow-lg rounded-lg"
+              shadow="sm"
+            >
+              <CardBody>
+                <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center">
+                  <div className="relative col-span-6 md:col-span-4">
+                    <Player
+                      src={Mission3}
+                      className="player"
+                      loop
+                      autoplay
+                      style={{
+                        height: "300px",
+                        borderRadius: "8px",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                      }}
+                    />
+                  </div>
+                  <div className="flex flex-col col-span-6 md:col-span-8">
+                    <h1 className="text-[#000] text-[24px] font-[600] font-Roboto">
+                      Our Mission #3
+                    </h1>
+                    <h3>
+                      Voluptate excepteur duis aliqua officia ut culpa Lorem eu
+                      duis aute ad ut et eiusmod. Proident anim ut labore nulla
+                      eiusmod culpa tempor aliquip. Sunt est veniam adipisicing
+                      cillum occaecat ut non id.Anim occaecat minim est nisi
+                      ipsum enim ex est ea deserunt velit anim tempor.
+                    </h3>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Mission;
