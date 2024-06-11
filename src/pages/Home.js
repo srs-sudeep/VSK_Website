@@ -7,10 +7,10 @@ import AboutUs from '../components/AboutUs';
 const Home = () => {
   return (
     <div>
-      {/* <Map /> */}
       <Carousel />
       <AboutUs />
       <Mission />
+      <Map />
       <ContactUs />
     </div>
   );

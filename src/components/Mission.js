@@ -4,7 +4,6 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import Mission1 from "../data/Lottie/Mission1.json";
 import Mission2 from "../data/Lottie/Mission2.json";
 import Mission3 from "../data/Lottie/Mission3.json";
-import { style } from "d3";
 
 const styles = {
   container: {
@@ -55,7 +54,6 @@ const Mission = () => {
   return (
     <div className="mx-auto py-12" style={styles.container}>
       <div>
-        {/* <div className="box-container w-full h-full bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg p-8 shadow-lg"> */}
         <div
           style={{
             display: "flex",
