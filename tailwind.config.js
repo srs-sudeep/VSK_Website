@@ -6,7 +6,12 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        rajdhani: ['Rajdhani', 'sans-serif'],
+        sora: ['Sora', 'serif']
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],

@@ -44,13 +44,13 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       <Slider {...settings}>
         {videos.map((video, index) => (
-          <div key={index} className="relative w-full flex justify-center items-center h-full">
+          <div key={index} className="relative w-full">
             <video
               ref={el => videoRefs.current[index] = el}
-              className="w-full h-full object-cover transform scale-125"
+              className="w-full object-cover transform scale-125"
               src={video}
               autoPlay
               loop
