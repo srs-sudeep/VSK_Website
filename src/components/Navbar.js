@@ -29,7 +29,7 @@ const Navbar = () => {
     <div className="container mx-auto relative flex justify-between items-center">
       <div className="text-2xl font-bold text-white">VSK</div>
       <div className="md:hidden">
-      <button onClick={toggleMenu} className="focus:outline-none">
+      <button onClick={toggleMenu} className="focus:outline-none text-white">
             {isMenuOpen ? (
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -41,9 +41,9 @@ const Navbar = () => {
             )}
           </button>
       </div>
-      <div className={`absolute top-full right-0 mt-2 md:relative md:flex space-x-4 mb-10 text-white ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-        <a href="#hero" className="block md:inline-block mt-2 md:mt-0 ml-4">Hero</a>
-        <a href="#about-us" className="block md:inline-block mt-2 md:mt-0">About Us</a>
+      <div className={`absolute top-full right-0 mt-2 md:relative md:flex space-x-4 ${isMenuOpen ? 'text-orange-400' : 'text-white'}  ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+        {/* <a href="#hero" className="block md:inline-block mt-2 md:mt-0 ml-4">Hero</a> */}
+        <a href="#about-us" className="block md:inline-block mt-2 md:mt-0 ml-4">About Us</a>
         <a href="#map" className="block md:inline-block mt-2 md:mt-0">Map</a>
         <a href="#our-mission" className="block md:inline-block mt-2 md:mt-0">Our Mission</a>
         <a href="#contact-us" className="block md:inline-block mt-2 md:mt-0">Contact Us</a>

@@ -53,7 +53,7 @@ const styles = {
 };
 const Mission = () => {
   return (
-    <div className="mx-auto py-12" style={styles.container}>
+    <div id="our-mission" className="mx-auto py-12" style={styles.container}>
       <div>
         {/* <div className="box-container w-full h-full bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg p-8 shadow-lg"> */}
         <div

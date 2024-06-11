@@ -1,91 +1,31 @@
 import React from 'react';
+import background_image from '../data/background_about_us.jpeg';
+import about_us_image from '../data/samagra siksha logo.png';
 
-const AboutUs = () => {
+const AboutUsSection = () => {
   return (
-    <div id="about-us">
-      <h2 style={styles.title}>About Us</h2>
-      <div style={styles.content}>
-        <div style={styles.textContainer}>
-          <div style={styles.paragraph}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis arcu a ex
-              ullamcorper, id rhoncus sapien feugiat. Integer at elit non tortor vehicula ultricies.
-              Suspendisse ac dapibus dui, et vestibulum risus. Ut sagittis velit ut mauris gravida
-              lacinia. Vestibulum ac odio at eros tincidunt volutpat nec id nisl.
-            </p>
+    <section id="about-us" className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${background_image})` }}>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
+      <div className="absolute inset-0 flex py-16 px-20 justify-center">
+        <div className="bg-white bg-opacity-75 backdrop-blur-lg rounded-lg p-10 w-full mx-4">
+        <h1 className="text-3xl font-bold mt-4 mb-4 text-center texthead leading-relaxed font-[600]"><span className='bg-orange-400 px-1 py-1 bg-opacity rounded-md text-[#fff]'>About</span> Us</h1>
+          <div className="flex px-20 flex-col lg:flex-row md:px-8 lg:px-16 mt-16" >
+            <div className="w-1/3 pr-16 ">
+              <img src={about_us_image} alt="About Us" className="rounded-lg w-full h-full object-cover" />
+            </div>
+            <div className="w-2/3 flex mt-1 pr-10">
+              <div>
+                <p className="text-[22px] font-sora">
+                At Vidya Samiksha Kendra, our mission is to significantly enhance the academic performance of students while empowering teachers through innovative educational strategies and the optimal use of available resources. By fostering an environment where learning thrives, we are dedicated to unlocking the full potential of every student.                </p>
+                <p className="text-[22px] mt-6 font-sora">
+                At VSK, we believe in the power of data-driven insights to enhance the monitoring and management of the education system. By meticulously analyzing vast datasets, we identify trends, gaps, and opportunities for improvement, ensuring that every student's needs are met with precision and care. This comprehensive approach enables us to provide personalized learning experiences, fostering academic excellence and holistic development.                </p>
+              </div>
+            </div>
           </div>
-          <div style={styles.paragraph}>
-            <p>
-              Fusce volutpat ullamcorper libero vitae pellentesque. Vivamus varius urna id mauris
-              tincidunt, non placerat mauris efficitur. Phasellus vestibulum leo sit amet velit
-              eleifend bibendum. Integer tempor ex non metus sollicitudin, nec vulputate odio
-              volutpat. Mauris vitae risus vitae elit semper interdum.
-            </p>
-          </div>
-          <div style={styles.paragraph}>
-            <p>
-              Fusce volutpat ullamcorper libero vitae pellentesque. Vivamus varius urna id mauris
-              tincidunt, non placerat mauris efficitur. Phasellus vestibulum leo sit amet velit
-              eleifend bibendum. Integer tempor ex non metus sollicitudin, nec vulputate odio
-              volutpat. Mauris vitae risus vitae elit semper interdum.
-            </p>
-          </div>
-        </div>
-        <div style={styles.imageContainer}>
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Delhi_India_Government.jpg/1920px-Delhi_India_Government.jpg" 
-            alt="Company" 
-            style={styles.image} 
-          />
         </div>
       </div>
-    </div>
+    </section>
   );
-};
+}
 
-const styles = {
-  container: {
-    padding: '4px',
-    maxWidth: '400rem',
-    margin: '4rem 1rem 1rem',
-    background: 'linear-gradient(to bottom, #FFF,#FFA500 )', // Gradient from orange to white
-    color: '#333', // Font color
-    borderRadius: '10px', // Rounded corners
-    padding: '20px', // Add padding
-  },
-  title: {
-    fontSize: '4em',
-    marginBottom: '20px',
-    textAlign: 'center',
-    color: '#333'
-  },
-  content: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    flexDirection: 'row-reverse', // Reverse the order of elements
-  },
-  imageContainer: {
-    flex: '0 0 auto',
-    marginLeft: '10rem', // Adjust margin for spacing
-    marginBottom: '8rem'
-  },
-  image: {
-    width: '100%',
-    maxWidth: '40rem',
-    height: 'auto',
-    borderRadius: '10px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add shadow for a floating effect
-  },
-  textContainer: {
-    flex: '1',
-    flexDirection: 'column',
-    marginLeft: '10rem',
-    marginRight: '20rem',
-  },
-  paragraph: {
-    marginBottom: '10px', // Adjust the gap between paragraphs
-    color: '#333'
-  },
-};
-
-export default AboutUs;
+export default AboutUsSection;
