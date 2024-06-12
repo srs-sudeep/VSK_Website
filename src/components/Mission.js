@@ -10,7 +10,7 @@ const styles = {
   container: {
     padding: "4px",
     maxWidth: "400rem",
-    margin: "4rem 1rem 1rem",
+    // margin: "4rem 1rem 1rem",
     // background:"linear-gradient(89deg, rgb(253, 220, 155) 26.2%, rgb(255, 215, 165) 48.5%)",
     background: "linear-gradient(to bottom right, #FFF,rgb(253, 215, 165) )", // Gradient from orange to white
     color: "#333", // Font color
