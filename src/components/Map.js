@@ -30,7 +30,7 @@ const Map = () => {
     <Box
     id ="map"
       sx={{ display: "flex", margin: 0, paddingBottom: "30px" }}
-      className="flex flex-col md:flex-row "
+      className="flex flex-col lg:flex-row "
     >
       <Box
         sx={{
