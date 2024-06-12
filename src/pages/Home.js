@@ -9,8 +9,8 @@ const Home = () => {
     <div>
       <Carousel />
       <AboutUs />
-      <Mission />
       <Map />
+      <Mission />
       <ContactUs />
     </div>
   );

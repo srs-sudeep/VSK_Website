@@ -71,7 +71,7 @@ const Mission = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="w-3/4 mb-8">
+          <div className="md:w-3/4 mb-8">
             <Card
               className="glassmorphism-card shadow-lg rounded-lg"
               shadow="sm"
@@ -105,7 +105,7 @@ const Mission = () => {
             </Card>
           </div>
 
-          <div className="w-3/4 self-end mb-8">
+          <div className="md:w-3/4 self-end mb-8">
             <Card
               className="glassmorphism-card shadow-lg rounded-lg"
               shadow="sm"
@@ -140,7 +140,7 @@ const Mission = () => {
             </Card>
           </div>
 
-          <div className="w-3/4">
+          <div className="md:w-3/4">
             <Card
               className="glassmorphism-card shadow-lg rounded-lg"
               shadow="sm"

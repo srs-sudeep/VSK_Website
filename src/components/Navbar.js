@@ -42,7 +42,6 @@ const Navbar = () => {
           </button>
       </div>
       <div className={`absolute top-full right-0 mt-2 md:relative md:flex space-x-4 ${isMenuOpen ? 'text-orange-400' : 'text-white'}  ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-        {/* <a href="#hero" className="block md:inline-block mt-2 md:mt-0 ml-4">Hero</a> */}
         <a href="#about-us" className="block md:inline-block mt-2 md:mt-0 ml-4">About Us</a>
         <a href="#map" className="block md:inline-block mt-2 md:mt-0">Map</a>
         <a href="#our-mission" className="block md:inline-block mt-2 md:mt-0">Our Mission</a>
