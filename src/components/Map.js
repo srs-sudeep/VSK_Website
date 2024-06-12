@@ -3,7 +3,7 @@ import { Box, Divider, Typography } from "@mui/material";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import india from "../data/District_geo.json";
 import '../index.css'; // Ensure you have Tailwind CSS imported
-
+import 'animate.css';
 const Map = () => {
   const [position, setPosition] = useState({ coordinates: [82, 19], zoom: 1 });
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
@@ -39,7 +39,7 @@ const Map = () => {
           flexDirection: "column",
           padding: 0,
         }}
-        className="justify-start md:justify-center items-start md:items-center mx-2 md:mx-[288px]"
+        className="justify-start md:justify-center items-start md:items-center mx-2 md:mx-[288px] animate__animated animate__fadeInLeft"
       >
         <h1 className="texthead text-[60px] md:text-[80px] leading-relaxed font-[600] text-orange-400">
             Vidya Samagra{" "}

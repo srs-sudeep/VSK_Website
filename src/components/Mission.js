@@ -60,7 +60,7 @@ const Mission = () => {
             justifyContent: "center",
             textAlign: "center",
           }}
-          className="d-flex justify-content-center pt-20 text-[27px] text-center md:text-start font-[600] font-Roboto pb-[20px]"
+          className="d-flex justify-content-center pt-20 text-[27px] text-center md:text-start font-[600] font-Roboto pb-[20px] animate__animated animate__fadeInRight"
         >
           <h1 className="texthead leading-relaxed font-[600]">
             Our{" "}
@@ -89,7 +89,7 @@ const Mission = () => {
                       }}
                     />
                   </div>
-                  <div className="flex flex-col col-span-6 md:col-span-8">
+                  <div className="flex flex-col col-span-6 md:col-span-8 animate__animated animate__fadeInRight">
                     <h1 className="text-[#000] text-[24px] font-[600] font-Roboto">
                       Our Mission #1
                     </h1>
@@ -124,7 +124,7 @@ const Mission = () => {
                       }}
                     />
                   </div>
-                  <div className="flex flex-col col-span-6 md:col-span-8">
+                  <div className="flex flex-col col-span-6 md:col-span-8 animate__animated animate__fadeInLeft">
                     <h1 className="text-[#000] text-[24px] font-[600] font-Roboto">
                       Our Mission #2
                     </h1>
@@ -158,7 +158,7 @@ const Mission = () => {
                       }}
                     />
                   </div>
-                  <div className="flex flex-col col-span-6 md:col-span-8">
+                  <div className="flex flex-col col-span-6 md:col-span-8 animate__animated animate__fadeInRight">
                     <h1 className="text-[#000] text-[24px] font-[600] font-Roboto">
                       Our Mission #3
                     </h1>

@@ -9,7 +9,7 @@ import video4 from "../data/videos/VID-20240609-WA0004.mp4";
 import video5 from "../data/videos/VID-20240609-WA0005.mp4";
 import video6 from "../data/videos/VID-20240609-WA0006.mp4";
 import video7 from "../data/videos/VID-20240609-WA0007.mp4";
-
+import 'animate.css';
 const videos = [video1, video2, video3, video4, video5, video6, video7];
 
 const Carousel = () => {
@@ -56,7 +56,7 @@ const Carousel = () => {
               loop
               muted
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 scale-125"></div> {/* Black overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50 scale-125 animate__animated animate__fadeInLeft"></div> {/* Black overlay */}
           </div>
         ))}
       </Slider>
