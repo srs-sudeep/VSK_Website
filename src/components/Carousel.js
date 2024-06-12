@@ -56,7 +56,7 @@ const Carousel = () => {
               loop
               muted
             />
-            <div className="absolute inset-0 bg-black bg-opacity-75 scale-125"></div> {/* Black overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50 scale-125"></div> {/* Black overlay */}
           </div>
         ))}
       </Slider>

@@ -28,31 +28,26 @@ const Map = () => {
 
   return (
     <Box
-      sx={{ display: "flex", height: "60vh", margin: 0, paddingBottom: "30px" }}
+    id ="map"
+      sx={{ display: "flex", margin: 0, paddingBottom: "30px" }}
+      className="flex flex-col md:flex-row "
     >
-      <Divider
-        orientation="vertical"
-        flexItem
-        sx={{ bgcolor: "grey", width: "1px", margin: 0, padding: 0 }}
-      />
       <Box
         sx={{
           flex: 1,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          marginLeft: "280px",
           padding: 0,
         }}
+        className="justify-start md:justify-center items-start md:items-center mx-2 md:mx-[288px]"
       >
-        <h1 className="texthead text-[100px] leading-relaxed font-[600] text-orange-400">
+        <h1 className="texthead text-[60px] md:text-[80px] leading-relaxed font-[600] text-orange-400">
             Vidya Samagra{" "}
           </h1>
-          <h1 className="texthead text-[100px] leading-relaxed font-[600]">
+          <h1 className="texthead text-[60px] md:text-[100px] leading-relaxed font-[600]">
             Kendra
             </h1>
-            <h3 className="texthead text-[50px] leading-relaxed font-[600]">
+            <h3 className="texthead text-[28px] md:text-[50px] leading-relaxed font-[600]">
             Smart Education for all
             </h3>
             
